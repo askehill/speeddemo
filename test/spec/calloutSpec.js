@@ -41,6 +41,7 @@ describe("My callout", function () {
         expect(callback).toHaveBeenCalled();
 
         var circles = callback.calls.mostRecent().args[0];
+        //var arg2 = callback.calls.mostRecent().args[1];
         expect(circles.length).toEqual(2);
 
         expect(circles[0].x).toEqual(data[0].x);
@@ -52,5 +53,4 @@ describe("My callout", function () {
         expect(circles[1].radius).toEqual(data[1].radius);
 
     })
-
 })
